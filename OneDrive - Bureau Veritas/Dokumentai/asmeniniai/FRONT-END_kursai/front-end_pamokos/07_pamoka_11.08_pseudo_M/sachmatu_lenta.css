@@ -1,0 +1,38 @@
+table,
+th,
+td {
+    border: 1px solid grey;
+}
+
+table tr:nth-child(even) td:nth-child(even) {
+    background-color: black;
+}
+
+table tr:nth-child(odd) td:nth-child(odd) {
+    background-color: black;
+}
+
+p::after {
+    font-size: 16pt;
+    content: "Rašykite lietuviškai";
+}
+
+p::first-letter {
+    font-size: 60px;
+    color: yellow;
+}
+
+p::before {
+    content: &#9827;
+    font-size: 20pt;
+}
+
+div:not(:first-child)::before{
+    content:"//"
+}
+
+nav:single-button::backdrop 
+     {
+        background-color: blueviolet;
+     
+}
